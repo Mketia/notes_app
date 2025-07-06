@@ -29,8 +29,8 @@ class _NotesScreenState extends State<NotesScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final themeColor = Color(0xFF6A1B9A); // Custom purple
-    final backgroundColor = Color(0xFFF3E5F5); // Soft lavender
+    final themeColor = Color(0xFF1565C0); // Custom blue
+    final backgroundColor = Color(0xFFE3F2FD); // Soft blue
     final tileColor = Colors.white;
 
     return Scaffold(

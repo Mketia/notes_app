@@ -16,8 +16,8 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
   final _bodyController = TextEditingController();
   bool _isEditing = false;
 
-  final Color themeColor = Color(0xFF6A1B9A);
-  final Color backgroundColor = Color(0xFFF3E5F5);
+  final Color themeColor = Color(0xFF1565C0);
+  final Color backgroundColor = Color(0xFFE3F2FD);
 
   @override
   void initState() {
@@ -106,8 +106,8 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
               ),
             ),
           ],
-        ),
+        )
       ),
     );
   }
-} 
+}

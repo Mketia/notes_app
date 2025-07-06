@@ -44,8 +44,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final themeColor = Color(0xFF6A1B9A);
-    final backgroundColor = Color(0xFFF3E5F5);
+    final themeColor = Color(0xFF1565C0);
+    final backgroundColor = Color(0xFFE3F2FD);
 
     return Scaffold(
       backgroundColor: backgroundColor,
