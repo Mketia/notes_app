@@ -43,8 +43,8 @@ class _SignupScreenState extends State<SignupScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final themeColor = Color(0xFF1565C0);
-    final backgroundColor = Color(0xFFE3F2FD);
+    final themeColor = Color(0xFF00695C); // Deep teal
+    final backgroundColor = Color(0xFFE0F2F1); // Soft mint green
 
     return Scaffold(
       backgroundColor: backgroundColor,

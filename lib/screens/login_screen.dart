@@ -33,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Expanded(child: Text("Login failed: ${e.toString()}")),
             ],
           ),
-          backgroundColor: Colors.redAccent,
+          backgroundColor: Color(0xFFB00020), // Updated SnackBar color
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -44,8 +44,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final themeColor = Color(0xFF1565C0);
-    final backgroundColor = Color(0xFFE3F2FD);
+    final themeColor = Color(0xFF00695C); // Deep teal
+    final backgroundColor = Color(0xFFE0F2F1); // Mint green
 
     return Scaffold(
       backgroundColor: backgroundColor,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note_taker/logic/note_cubit.dart';
 import 'package:note_taker/models/note_model.dart';
+
 class NoteEditorScreen extends StatefulWidget {
   final Note? note;
 
@@ -16,8 +17,8 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
   final _bodyController = TextEditingController();
   bool _isEditing = false;
 
-  final Color themeColor = Color(0xFF1565C0);
-  final Color backgroundColor = Color(0xFFE3F2FD);
+  final Color themeColor = Color(0xFF00695C); // Updated to deep teal
+  final Color backgroundColor = Color(0xFFE0F2F1); // Updated to soft mint green
 
   @override
   void initState() {
@@ -106,7 +107,7 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
               ),
             ),
           ],
-        )
+        ),
       ),
     );
   }

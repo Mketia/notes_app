@@ -29,8 +29,8 @@ class _NotesScreenState extends State<NotesScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final themeColor = Color(0xFF1565C0); // Custom blue
-    final backgroundColor = Color(0xFFE3F2FD); // Soft blue
+    final themeColor = Color(0xFF00695C); // Deep teal
+    final backgroundColor = Color(0xFFE0F2F1); // Soft mint green
     final tileColor = Colors.white;
 
     return Scaffold(
@@ -78,7 +78,8 @@ class _NotesScreenState extends State<NotesScreen> {
             final cubit = context.read<NoteCubit>();
             return ListView.separated(
               itemCount: state.notes.length,
-              separatorBuilder: (context, index) => Divider(thickness: 1, height: 1, color: Colors.grey[300]),
+              separatorBuilder: (context, index) =>
+                  Divider(thickness: 1, height: 1, color: Colors.grey[300]),
               itemBuilder: (ctx, index) {
                 final note = state.notes[index];
                 return Container(
@@ -101,7 +102,11 @@ class _NotesScreenState extends State<NotesScreen> {
                     contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                     title: Text(
                       note.title ?? 'Untitled',
-                      style: TextStyle(fontWeight: FontWeight.bold, color: themeColor, fontSize: 16),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: themeColor,
+                        fontSize: 16,
+                      ),
                     ),
                     subtitle: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -111,7 +116,11 @@ class _NotesScreenState extends State<NotesScreen> {
                         SizedBox(height: 6),
                         Text(
                           cubit.formatTimestamp(note.timestamp),
-                          style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: Colors.grey[600]),
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic,
+                            color: Colors.grey[600],
+                          ),
                         ),
                       ],
                     ),
@@ -137,7 +146,7 @@ class _NotesScreenState extends State<NotesScreen> {
               },
             );
           }
-          return Center(child: Text('Unexpected state: \${state.runtimeType}'));
+          return Center(child: Text('Unexpected state: ${state.runtimeType}'));
         },
       ),
       floatingActionButton: FloatingActionButton(
