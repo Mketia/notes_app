@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "659232728583",
-    "project_id": "note-maker-fd325",
-    "storage_bucket": "note-maker-fd325.firebasestorage.app"
+    "project_number": "1058941582250",
+    "project_id": "notesapp-98067",
+    "storage_bucket": "notesapp-98067.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:659232728583:android:fe86a09271617d7df0eca2",
+        "mobilesdk_app_id": "1:1058941582250:android:d0245b27debc976bbf89d3",
         "android_client_info": {
           "package_name": "com.example.note_taker"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC1DUb37StiZR6i8aFrTYrubBiukB3RDK8"
+          "current_key": "AIzaSyCHeimFz6-9qMNSopF0_TMj4pJdnmfeN0s"
         }
       ],
       "services": {
